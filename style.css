@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+  padding: 1% 20%;
+  background-color: rgb(229, 229, 218);
+  height: 100vh;
+  width: 100vw;
+}
+
+.heading{
+  text-align: center;
+}
+
+.character_bar{
+  padding: 1% 10%;
+  
+}
+
+.character_bar ul{
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.character_bar ul li{
+  list-style: none;
+  padding: 1%;
+  background-color: rgb(236, 236, 244)
+}
+
+.detailedInfo{
+  background-color: rgb(192, 208, 208);
+  color: rgb(22, 22, 195);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.name{
+  padding: 1%;
+}
+
+.image{
+  margin: 2%;
+  width: 280px;
+  height: 280px;
+  border: 2px black;
+  background-color: rgb(234, 213, 213);
+}
+.form{
+  background-color: rgb(174, 215, 222);
+  padding: 1.5%;
+  text-align: center;
+}
+
+.form label{
+  font-weight: bold;
+  padding-right: 2%;
+}
+
+.form button{
+  padding: 1%;
+  background-color: rgb(120, 120, 188);
+}
+
+
+.updateForm{
+  padding: 1.5% 0;
+  background-color: rgb(154, 205, 225);
+  font-weight: bold;
+}
