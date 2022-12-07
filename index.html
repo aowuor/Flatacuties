@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flatacuties</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./scripts/index.js"></script>
+  <title>Flatacuties</title>
 </head>
 <body>
-    <h1>Vote Cutest Animal</h1>
-    <div class="container">
-        <form action="" id="">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-            <label for="imageUrl">Image URL</label>
-            <input type="text" id="imageUrl" name="imageUrl">
-            <label for="">Description</label>
-            <textarea name="description" id="description" cols="30" rows="10"></textarea>
-            <div>
-                <button type="submit">ADD NEW</button>
-                <button type="submit">GET</button>
-                <button type="submit">UPDATE</button>
-                <button type="submit">DELETE</button>
-            </div>
-        </form>
-        <div class="selection">
-            <!-- Selected animal added here -->
-
-            <!-- <img src="" alt="">
-            <div>
-                <div>
-                    <h4>Name</h4>
-                    <h4>ID</h4>
-                </div>
-                <p>Description</p>
-                <div>
-                    <button>Total Vote</button>
-                    <button>Add Vote</button>
-                </div>  
-
-            </div> -->
-        </div>
-
+  <div class="container">
+    <div class="heading">
+      <h1>Flatacuties</h1>
     </div>
-    
+    <div class="character_bar">
+      <ul id="animals">
+        <!-- Add animal list here -->
+      </ul>
+      
+    </div>
+    <div class="detailedInfo">
+      <div class="name">
+        <h2 id="name">Animal Name</h2>
+      </div>
+      <div class="image">
+        <img src="" id="image" alt="Animal's Image" height="300" width="300">
+      </div>
+      <div class="votes">
+        <h4>Total Votes: <span id="voteCount">0</span></h4>
+      </div>
+    </div>
+
+    <div class="form">
+      <form id="voteForm">
+        <label for="vote">Vote Animal</label>
+        <input type="text" id="vote" placeholder="Disabled input">
+        <!-- <input type="submit" value="Add Votes" />
+        <input type="submit" value="Reset" /> -->
+        <button type="submit" id="addVote">Add Vote</button>
+      </form>
+    </div>
+
+    <div class="updateForm">
+      <h4>Add New Animal</h4>
+      <br>
+      <form id="updateForm">
+        <label for="nameUpdate">Name</label>
+        <input type="text" id="nameUpdate" placeholder="Disabled input">
+        <label for="imageUrlUpdate">Image Url</label>
+        <input type="text" id="imageUrlUpdate" placeholder="Disabled input">
+        <label for="votesUpdate">Votes</label>
+        <input type="text" id="votesUpdate" placeholder="Disabled input">
+        <input type="submit" value="POST" />
+        
+      </form>
+    </div>
+  </div>
 </body>
 </html>
